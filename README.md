@@ -1,10 +1,10 @@
 # Ex.No.9 – Exploration of Prompting Techniques for Video Generation
 
-## Date: 06/09/2026
+## Date: 18/09/2026
 
-## Name: INBANANTHA MS
+## Name: THRISHANTH E
 
-## Register No.: 212223060090
+## Register No.: 212224230291
 
 ---
 
