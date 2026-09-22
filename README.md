@@ -1,6 +1,6 @@
 # Ex.No.9 – Exploration of Prompting Techniques for Video Generation
 
-## Date: 18/09/2026
+## Date: 22/09/2026
 
 ## Name: THRISHANTH E
 
@@ -10,38 +10,38 @@
 
 # Aim
 
-To demonstrate the ability of text-to-video generation tools to reproduce an existing autonomous-driving video by creating precise and progressively refined prompts. The experiment focuses on analyzing an ADAS/autonomous-driving scene and generating a similar video showing a driverless vehicle navigating a public road safely.
+To demonstrate the ability of text-to-video generation tools to create an AI-based drone delivery video by developing precise and progressively refined prompts. The experiment focuses on analyzing a drone-delivery scene and generating a similar video showing an autonomous delivery drone carrying a package through an urban environment.
 
 ---
 
 # Abstract
 
-Artificial Intelligence and Advanced Driver Assistance Systems (ADAS) are transforming modern transportation by enabling vehicles to perceive their surroundings and perform driving tasks with reduced human intervention. Text-to-video generation provides a way to create realistic simulations of such automotive scenarios using natural-language prompts.
+Artificial Intelligence and autonomous systems are transforming modern delivery services by enabling drones to transport packages with reduced human intervention. Text-to-video generation provides a way to create realistic simulations of such delivery scenarios using natural-language prompts.
 
-In this experiment, a selected portion of the video **“Tesla Delivers Itself to New Owner”** is used as the reference. The selected portion focuses on a vehicle traveling on a public road without a visible driver while maintaining its lane and navigating surrounding traffic.
+In this experiment, an AI-based drone delivery scenario is selected as the reference concept. The scene focuses on an autonomous drone carrying a small package while flying through a residential or urban environment and delivering the package safely.
 
-The reference scene is analyzed in terms of vehicle movement, road environment, traffic, lighting, camera perspective, and visual style. Basic, refined, and detailed prompts are then created and used to generate a similar AI video.
+The scene is analyzed in terms of drone movement, environment, lighting, camera perspective, package delivery, and visual style. Basic, refined, and detailed prompts are then created and used to generate a similar AI video.
 
 ---
 
 # Introduction
 
-ADAS and autonomous-driving technologies combine cameras, sensors, artificial intelligence, and vehicle-control systems to assist with tasks such as lane keeping, traffic awareness, braking, and navigation.
+AI-powered delivery drones combine cameras, sensors, navigation systems, and artificial intelligence to perform tasks such as package transportation, route planning, obstacle avoidance, and automated delivery.
 
-The selected reference video demonstrates an autonomous vehicle traveling through real-world road conditions without a visible driver. The original video was published by Tesla and describes an autonomous Model Y driving from Gigafactory Texas to its new owner's home, covering parking lots, highways, intersections, and city roads.
+The selected scenario demonstrates an autonomous delivery drone flying through an urban environment while carrying a package. The drone travels above roads and buildings before reaching the delivery location.
 
-For this experiment, only the **ADAS/autonomous-driving portion** is considered. Unrelated portions of the original video are trimmed so that the experiment concentrates on the vehicle driving on the road.
+For this experiment, the focus is placed on the autonomous drone-delivery sequence. The objective is to reproduce the major visual characteristics of the scenario using progressively refined text prompts.
 
 ---
 
 # AI Tools Required
 
-- ChatGPT / DALL·E for prompt development
-- Google Gemini
-- Runway
-- Pika
-- Stable Video Diffusion
-- Other available text-to-video generation tools
+* ChatGPT / DALL·E for prompt development
+* Google Gemini
+* Runway
+* Pika
+* Stable Video Diffusion
+* Other available text-to-video generation tools
 
 ---
 
@@ -49,18 +49,19 @@ For this experiment, only the **ADAS/autonomous-driving portion** is considered.
 
 ## 1. Objects / Subjects
 
-The main subject is a modern electric vehicle traveling on a public road without a visible driver.
+The main subject is a modern autonomous delivery drone carrying a small package.
 
 Other visible elements include:
 
-- Surrounding cars
-- Road lanes
-- Traffic signals
-- Roadside buildings
-- Utility poles
-- Sidewalks
-- Trees and vegetation
-- Vehicle dashboard/interior in some camera views
+* Delivery package
+* Residential buildings
+* Roads
+* Cars
+* Trees
+* Sidewalks
+* Pedestrians
+* Street lights
+* Urban infrastructure
 
 ---
 
@@ -68,13 +69,13 @@ Other visible elements include:
 
 The scene mainly contains:
 
-- White and silver vehicles
-- Dark vehicle interiors
-- Gray asphalt roads
-- Green roadside vegetation
-- Blue sky
-- White clouds
-- Black and gray vehicle components
+* White and gray drone
+* Brown or cardboard-colored package
+* Gray roads
+* Green trees and vegetation
+* White and colored buildings
+* Blue sky
+* Black and gray vehicles
 
 The overall color appearance is natural and realistic.
 
@@ -86,56 +87,59 @@ The video is recorded during daylight.
 
 The lighting characteristics include:
 
-- Bright natural sunlight
-- Soft shadows
-- Clear visibility
-- Reflections on vehicle surfaces
-- Balanced exposure
-- Natural outdoor illumination
+* Bright natural sunlight
+* Soft shadows
+* Clear visibility
+* Reflections on buildings and vehicles
+* Balanced exposure
+* Natural outdoor illumination
 
 ---
 
 ## 4. Background
 
-The background contains a typical urban/suburban road environment with:
+The background contains a typical urban or residential environment with:
 
-- Multiple lanes
-- Other vehicles
-- Traffic signals
-- Buildings
-- Sidewalks
-- Utility poles
-- Trees and grass
-- Elevated road structures
+* Houses and apartment buildings
+* Roads
+* Cars
+* Trees
+* Sidewalks
+* Street lights
+* Utility poles
+* Other urban structures
 
 ---
 
-## 5. Vehicle Movement
+## 5. Drone Movement
 
-The main vehicle:
+The main drone:
 
-- Moves forward along the road.
-- Remains within its lane.
-- Maintains a controlled speed.
-- Travels among other vehicles.
-- Approaches intersections and traffic signals.
-- Demonstrates autonomous-driving behavior.
+* Flies forward through the city.
+* Maintains a stable altitude.
+* Carries a package below its body.
+* Moves smoothly between buildings.
+* Approaches the delivery location.
+* Slows down near the destination.
+* Delivers the package safely.
 
 ---
 
 ## 6. Camera Perspective
 
-The selected scene uses a realistic automotive camera perspective.
+The selected scene uses a realistic aerial camera perspective.
 
-The camera appears to capture the road from inside or around the vehicle, providing a forward view of:
+The camera captures:
 
-- Road
-- Traffic
-- Vehicle surroundings
-- Lane markings
-- Traffic signals
+* Drone
+* Package
+* Buildings
+* Roads
+* Trees
+* Vehicles
+* Delivery location
 
-The perspective gives the viewer the impression of being inside the autonomous vehicle.
+The perspective gives the viewer the impression of following an autonomous delivery drone.
 
 ---
 
@@ -143,9 +147,9 @@ The perspective gives the viewer the impression of being inside the autonomous v
 
 The reference is:
 
-**Realistic automotive footage / documentary-style driving video**
+**Realistic aerial footage / documentary-style technology video**
 
-It does not use cartoon or cinematic fantasy effects. The objective is to reproduce a believable real-world driving environment.
+It does not use cartoon or fantasy effects. The objective is to reproduce a believable real-world drone delivery environment.
 
 ---
 
@@ -153,48 +157,48 @@ It does not use cartoon or cinematic fantasy effects. The objective is to reprod
 
 ## Step 1 – Select the Reference Video
 
-The video **“Tesla Delivers Itself to New Owner”** was selected as the reference material.
+A video showing an autonomous drone delivering a package was selected as the reference concept.
 
-The original video contains autonomous-driving footage of a Tesla Model Y traveling through real-world roads.
+The selected scenario contains a delivery drone flying through an urban environment while carrying a package.
 
 ---
 
 ## Step 2 – Trim the Relevant Section
 
-Only the portion showing the vehicle driving autonomously on the road is selected.
+Only the portion showing the drone flying and delivering the package is selected.
 
 Unnecessary sections such as:
 
-- Vehicle delivery
-- Introduction
-- Parking-lot scenes
-- Owner-related scenes
-- Other unrelated footage
+* Drone introduction
+* Product advertisements
+* Indoor scenes
+* Unrelated drone operations
+* Other unrelated footage
 
 are excluded.
 
-The final selected clip focuses on the autonomous-driving sequence.
+The final selected clip focuses on the autonomous delivery sequence.
 
 ---
 
 # Step 3 – Analyze the Video
 
-The selected clip was examined based on:
+The selected scene was examined based on:
 
-| Feature | Observation |
-|---|---|
-| Main Subject | Driverless modern electric vehicle |
-| Environment | Urban/suburban public road |
-| Traffic | Multiple vehicles traveling normally |
-| Road | Multi-lane paved road |
-| Lighting | Bright natural daylight |
-| Sky | Clear blue sky with clouds |
-| Background | Buildings, traffic signals, trees and infrastructure |
-| Vehicle Motion | Smooth forward movement |
-| Driving Behavior | Lane following and controlled navigation |
-| Camera | Forward-facing automotive viewpoint |
-| Style | Realistic documentary/automotive footage |
-| Mood | Calm, safe and technologically advanced |
+| Feature           | Observation                                   |
+| ----------------- | --------------------------------------------- |
+| Main Subject      | Autonomous delivery drone                     |
+| Environment       | Urban/residential area                        |
+| Package           | Small delivery package                        |
+| Road              | Paved urban roads                             |
+| Lighting          | Bright natural daylight                       |
+| Sky               | Clear blue sky with clouds                    |
+| Background        | Buildings, trees, vehicles and infrastructure |
+| Drone Motion      | Smooth forward flight                         |
+| Delivery Behavior | Controlled navigation and package delivery    |
+| Camera            | Aerial/following viewpoint                    |
+| Style             | Realistic documentary/technology footage      |
+| Mood              | Calm, safe and technologically advanced       |
 
 ---
 
@@ -202,11 +206,11 @@ The selected clip was examined based on:
 
 ## Prompt 1
 
-> **"A driverless electric car driving on a city road with other vehicles during the daytime."**
+> **"A delivery drone flying over a city and carrying a package during the daytime."**
 
 ### Observation
 
-The basic prompt identifies the main concept of autonomous driving but does not provide sufficient information about the road layout, traffic, camera position, vehicle behavior, lighting, or surroundings.
+The basic prompt identifies the main concept of drone delivery but does not provide sufficient information about the drone movement, environment, camera position, lighting, package, or delivery behavior.
 
 ---
 
@@ -214,22 +218,23 @@ The basic prompt identifies the main concept of autonomous driving but does not 
 
 ## Prompt 2
 
-> **"A modern driverless electric car smoothly driving along a multi-lane urban road during daylight, surrounded by normal traffic, with traffic lights, buildings, trees, and clear lane markings visible."**
+> **"A modern autonomous delivery drone smoothly flying over a residential city area during daylight while carrying a small package, with buildings, roads, trees, and cars visible below."**
 
 ### Observation
 
 The refined prompt adds:
 
-- Multi-lane road
-- Daylight
-- Surrounding traffic
-- Traffic signals
-- Buildings
-- Trees
-- Lane markings
-- Smooth vehicle movement
+* Autonomous drone
+* Daylight
+* Delivery package
+* Residential area
+* Roads
+* Buildings
+* Trees
+* Cars
+* Smooth drone movement
 
-This creates a more realistic autonomous-driving scenario.
+This creates a more realistic drone-delivery scenario.
 
 ---
 
@@ -237,7 +242,7 @@ This creates a more realistic autonomous-driving scenario.
 
 ## Prompt 3
 
-> **"Create a photorealistic automotive driving video showing a modern electric vehicle traveling autonomously on a multi-lane urban road during a bright sunny day. The vehicle moves smoothly and steadily without a visible driver, maintaining its lane while traveling through normal traffic. Several cars and pickup trucks move naturally in adjacent lanes at realistic speeds. The road contains clear lane markings, traffic signals, intersections, sidewalks, utility poles, roadside grass, trees, and commercial buildings. Show the vehicle approaching and passing through a normal urban intersection while maintaining a safe trajectory. Use a realistic forward-facing camera perspective from inside the vehicle, with the dashboard and windshield subtly visible. Natural daylight, realistic shadows, accurate vehicle proportions, physically correct road motion, stable camera movement, realistic reflections, documentary-style automotive footage, no dramatic effects, no collisions, no sudden movements, and no visible driver."**
+> **"Create a photorealistic aerial video showing a modern autonomous delivery drone carrying a small cardboard package through a residential urban neighborhood during a bright sunny day. The drone flies smoothly and steadily at a safe altitude above the road while maintaining a stable flight path. Show houses, apartment buildings, roads, parked cars, moving vehicles, trees, sidewalks, street lights, utility poles, and pedestrians below. The drone approaches a residential building, slows down, carefully descends near the entrance, and delivers the package safely. Use a realistic aerial tracking camera perspective that follows the drone during flight. Natural daylight, realistic shadows, accurate drone proportions, realistic package size, physically believable flight movement, stable camera motion, detailed urban surroundings, natural reflections, documentary-style technology footage, no dramatic effects, no collisions, no sudden movements, and no distorted objects."**
 
 ---
 
@@ -245,7 +250,7 @@ This creates a more realistic autonomous-driving scenario.
 
 The following instructions can be added to reduce unwanted results:
 
-> **"Avoid visible drivers, distorted vehicles, floating cars, unrealistic road geometry, sudden lane changes, collisions, excessive motion blur, duplicated vehicles, warped traffic lights, unrealistic buildings, cartoon graphics, futuristic fantasy elements, camera shaking, and unnatural vehicle movement."**
+> **"Avoid distorted drones, floating packages, unrealistic buildings, duplicated vehicles, duplicated people, unrealistic flight paths, sudden movements, excessive motion blur, camera shaking, collisions, warped objects, cartoon graphics, futuristic fantasy elements, incorrect drone proportions, and unnatural package delivery."**
 
 ---
 
@@ -253,13 +258,13 @@ The following instructions can be added to reduce unwanted results:
 
 The final prompt is entered into a suitable text-to-video generation model such as:
 
-- Runway
-- Pika
-- Google Gemini/Veo, if available
-- Stable Video Diffusion
-- Other available AI video-generation platforms
+* Runway
+* Pika
+* Google Gemini/Veo, if available
+* Stable Video Diffusion
+* Other available AI video-generation platforms
 
-The generated video should be saved for comparison with the reference clip.
+The generated video should be saved for comparison with the reference scene.
 
 ---
 
@@ -267,36 +272,37 @@ The generated video should be saved for comparison with the reference clip.
 
 The generated video is compared with the selected reference based on:
 
-- Vehicle appearance
-- Driverless appearance
-- Road environment
-- Vehicle movement
-- Traffic
-- Lane positioning
-- Camera perspective
-- Lighting
-- Background
-- Realism
-- Overall visual similarity
+* Drone appearance
+* Package appearance
+* Drone movement
+* Delivery behavior
+* Urban environment
+* Buildings
+* Roads
+* Camera perspective
+* Lighting
+* Background
+* Realism
+* Overall visual similarity
 
 ---
 
 # Comparison of Original and Generated Video
 
-| Parameter | Original Video | Generated Video |
-|---|---|---|
-| Main Subject | Autonomous electric vehicle | Autonomous electric vehicle |
-| Driver | No visible driver | No visible driver |
-| Environment | Public urban/suburban road | Similar urban/suburban road |
-| Traffic | Multiple surrounding vehicles | Multiple surrounding vehicles |
-| Road | Multi-lane paved road | Multi-lane paved road |
-| Vehicle Motion | Smooth forward movement | Smooth forward movement |
-| Lane Following | Vehicle maintains road path | Vehicle maintains road path |
-| Traffic Signals | Present | Included |
-| Lighting | Natural daylight | Natural daylight |
-| Camera | Automotive/road-facing view | Forward-facing automotive view |
-| Background | Buildings, trees and infrastructure | Similar roadside environment |
-| Style | Realistic automotive footage | Photorealistic AI video |
+| Parameter    | Original Video             | Generated Video                |
+| ------------ | -------------------------- | ------------------------------ |
+| Main Subject | Delivery drone             | Delivery drone                 |
+| Package      | Small delivery package     | Small delivery package         |
+| Environment  | Urban/residential area     | Similar urban/residential area |
+| Buildings    | Houses and buildings       | Houses and buildings           |
+| Traffic      | Vehicles present           | Vehicles included              |
+| Drone Motion | Smooth flight              | Smooth flight                  |
+| Flight Path  | Controlled movement        | Controlled movement            |
+| Delivery     | Package delivery           | Package delivery               |
+| Lighting     | Natural daylight           | Natural daylight               |
+| Camera       | Aerial/following view      | Aerial tracking view           |
+| Background   | Buildings, trees and roads | Similar urban environment      |
+| Style        | Realistic drone footage    | Photorealistic AI video        |
 
 ---
 
@@ -304,15 +310,15 @@ The generated video is compared with the selected reference based on:
 
 The generated video successfully attempts to reproduce the major characteristics of the reference:
 
-1. A modern vehicle is shown driving without a visible driver.
-2. The vehicle travels on a public road.
-3. Other vehicles are present in surrounding lanes.
-4. The vehicle follows a defined road path.
-5. Traffic signals and road infrastructure are included.
+1. An autonomous delivery drone is shown carrying a package.
+2. The drone travels through an urban environment.
+3. Buildings and roads are visible.
+4. Trees and vehicles are present.
+5. The drone follows a controlled flight path.
 6. The scene takes place during daylight.
-7. The camera provides a realistic automotive perspective.
-8. The generated scene follows a realistic automotive-video style.
-9. The overall concept of autonomous driving is preserved.
+7. The camera provides a realistic aerial perspective.
+8. The package is delivered near a residential building.
+9. The generated scene follows a realistic technology-video style.
 
 ---
 
@@ -320,14 +326,14 @@ The generated video successfully attempts to reproduce the major characteristics
 
 Some differences may occur between the reference and generated video:
 
-- The exact vehicle model may not be identical.
-- Road geometry may differ.
-- The number and positions of surrounding vehicles may change.
-- Traffic signal positions may vary.
-- Buildings and roadside objects may not match exactly.
-- Vehicle movements may differ slightly.
-- Camera movement may not perfectly match the original.
-- Small visual details may be generated differently.
+* The exact drone model may not be identical.
+* The package size and appearance may differ.
+* Building designs may change.
+* The number and positions of vehicles may vary.
+* Trees and roadside objects may not match exactly.
+* The drone flight path may differ slightly.
+* Camera movement may not perfectly match the original.
+* Small visual details may be generated differently.
 
 ---
 
@@ -337,27 +343,28 @@ After comparing the first generated output with the reference, the prompt can be
 
 ## Initial Prompt
 
-> "A driverless electric car driving on a city road."
+> "A delivery drone flying over a city."
 
 ## Improved Prompt
 
-> "A modern driverless electric car driving smoothly on a multi-lane urban road with surrounding traffic during daylight."
+> "A modern autonomous delivery drone carrying a small package flying smoothly over a residential urban area during daylight."
 
 ## Final Prompt
 
-> "A photorealistic automotive driving video showing a modern electric vehicle traveling autonomously on a multi-lane urban road during a bright sunny day, without a visible driver, maintaining its lane among normal traffic, approaching traffic signals and intersections, with realistic road markings, surrounding vehicles, buildings, trees, sidewalks and utility poles, captured from a stable forward-facing interior automotive camera."
+> "A photorealistic autonomous delivery drone carrying a small package flying smoothly through a residential urban neighborhood during a bright sunny day, maintaining a stable altitude above the road, surrounded by buildings, trees, cars and sidewalks, approaching a residential building and carefully delivering the package near the entrance, captured using a stable aerial tracking camera with realistic lighting, shadows, reflections and physically believable drone movement."
 
 ## Result of Refinement
 
 Prompt refinement improves the generated video's:
 
-- Scene composition
-- Vehicle behavior
-- Road environment
-- Camera perspective
-- Lighting
-- Realism
-- Autonomous-driving appearance
+* Scene composition
+* Drone movement
+* Package appearance
+* Delivery behavior
+* Camera perspective
+* Lighting
+* Background
+* Realism
 
 ---
 
@@ -369,32 +376,29 @@ The experiment follows a three-stage prompting approach.
 
 Describes only the main subject.
 
-> "A driverless electric car driving on a city road."
-
----
+> "A delivery drone flying over a city."
 
 ## Level 2 – Refined Prompt
 
 Adds environmental and movement details.
 
-> "A modern driverless electric car smoothly driving along a multi-lane urban road during daylight, surrounded by normal traffic, with traffic lights, buildings, trees, and clear lane markings visible."
-
----
+> "A modern autonomous delivery drone smoothly flying over a residential city area during daylight while carrying a small package, with buildings, roads, trees, and cars visible below."
 
 ## Level 3 – Detailed Prompt
 
 Adds:
 
-- Vehicle behavior
-- Road layout
-- Traffic
-- Camera position
-- Lighting
-- Background
-- Perspective
-- Motion
-- Realism
-- Negative instructions
+* Drone behavior
+* Package details
+* Flight path
+* Urban environment
+* Camera position
+* Lighting
+* Background
+* Perspective
+* Motion
+* Realism
+* Negative instructions
 
 This produces a closer representation of the reference video.
 
@@ -402,14 +406,14 @@ This produces a closer representation of the reference video.
 
 # Observations
 
-1. Basic prompts produce only a general representation of autonomous driving.
-2. Adding vehicle behavior improves motion realism.
-3. Describing road conditions helps establish a realistic driving environment.
-4. Specifying the camera perspective makes the generated video more similar to automotive footage.
-5. Describing surrounding traffic improves scene realism.
+1. Basic prompts produce only a general representation of drone delivery.
+2. Adding drone movement improves motion realism.
+3. Describing the package helps establish the delivery concept.
+4. Describing buildings and roads creates a realistic urban environment.
+5. Specifying the camera perspective makes the generated video more similar to aerial footage.
 6. Lighting instructions help reproduce the daytime appearance.
-7. Explicitly mentioning the absence of a visible driver helps communicate the autonomous-driving concept.
-8. Negative prompts can reduce distorted vehicles and unrealistic movements.
+7. Describing the delivery action improves the overall scene.
+8. Negative prompts can reduce distorted drones and unrealistic movements.
 9. Detailed prompts provide better control over the generated scene.
 10. Multiple iterations may be required to achieve a close visual match.
 
@@ -417,103 +421,118 @@ This produces a closer representation of the reference video.
 
 # Advantages
 
-- Enables rapid creation of autonomous-driving simulations.
-- Does not require physical vehicle testing.
-- Can be used for educational demonstrations.
-- Helps visualize ADAS and autonomous-driving concepts.
-- Allows different road conditions to be simulated.
-- Prompts can be modified easily.
-- Useful for presentations and technology demonstrations.
+* Enables rapid creation of drone-delivery simulations.
+* Does not require physical drone testing.
+* Can be used for educational demonstrations.
+* Helps visualize autonomous delivery concepts.
+* Allows different environments to be simulated.
+* Prompts can be modified easily.
+* Useful for presentations and technology demonstrations.
 
 ---
 
 # Limitations
 
-- AI-generated vehicle motion may not always be physically accurate.
-- Exact reproduction of the original video is difficult.
-- Road markings and traffic signals may sometimes appear distorted.
-- Vehicle geometry may change between frames.
-- AI-generated videos may contain inconsistent objects.
-- Autonomous-driving behavior shown in generated footage should not be treated as proof of real-world vehicle capability.
-- Several prompt iterations may be necessary.
+* AI-generated drone movement may not always be physically accurate.
+* Exact reproduction of the original video is difficult.
+* Buildings and road structures may sometimes appear distorted.
+* Drone geometry may change between frames.
+* AI-generated videos may contain inconsistent objects.
+* Generated drone behavior should not be treated as proof of real-world drone capability.
+* Several prompt iterations may be necessary.
 
 ---
 
 # Applications
 
-| Application | Description |
-|---|---|
-| ADAS Education | Demonstrating autonomous-driving concepts to students |
-| Automotive Training | Visualizing vehicle-assistance systems |
-| Simulation | Creating synthetic driving environments |
-| Research | Generating scenarios for AI/vehicle perception studies |
-| Presentations | Demonstrating future mobility technologies |
-| Virtual Testing | Creating conceptual road scenarios |
-| Autonomous Vehicle Development | Visualizing possible driving situations |
+| Application       | Description                                         |
+| ----------------- | --------------------------------------------------- |
+| Drone Education   | Demonstrating autonomous drone concepts to students |
+| Delivery Training | Visualizing automated package delivery              |
+| Simulation        | Creating synthetic delivery environments            |
+| Research          | Generating scenarios for autonomous-drone studies   |
+| Presentations     | Demonstrating future delivery technologies          |
+| Virtual Testing   | Creating conceptual delivery scenarios              |
+| Smart Cities      | Visualizing AI-based urban delivery systems         |
 
 ---
 
 # Future Scope
 
-Future text-to-video systems can be used to create more sophisticated automotive simulations involving:
+Future text-to-video systems can be used to create more sophisticated drone-delivery simulations involving:
 
-- Lane-change scenarios
-- Emergency braking situations
-- Pedestrian detection
-- Traffic-sign recognition
-- Obstacle avoidance
-- Highway driving
-- Night-time driving
-- Rain and fog conditions
-- Complex intersections
-- Vehicle-to-vehicle interaction
-- Multi-camera autonomous-driving simulations
+* Emergency medical delivery
+* Food delivery
+* Package delivery to remote areas
+* Obstacle avoidance
+* Multiple drones flying together
+* Night-time delivery
+* Rain and fog conditions
+* Airport or industrial delivery
+* Drone-to-drone communication
+* Pedestrian detection
+* Automatic landing
+* Complex urban environments
+* Multi-camera drone simulations
 
-Integration with automotive simulation platforms could further improve the realism and usefulness of these generated scenarios.
-
-
----
-
-## 2. Trimmed Part
-
-<img width="1313" height="720" alt="image" src="https://github.com/user-attachments/assets/3328517f-836e-440a-b2b5-13af30546c27" />
+Integration with drone simulation platforms could further improve the realism and usefulness of these generated scenarios.
 
 ---
 
-## 3. Generated Video
+# 2. Trimmed Part
 
+The selected portion focuses on the autonomous drone flying with a package and approaching the delivery location.
 
-https://github.com/user-attachments/assets/3632382f-e2f3-4f86-9c97-0c5ed8712d0e
-
+The unnecessary portions of the reference video are excluded so that the experiment concentrates on the drone-delivery sequence.
 
 ---
 
-## 4. Prompts Used
+# 3. Generated Video
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/befadda1-d384-49fe-82f6-be875a587dbe" />
 
-### Prompt 1 – Basic
 
-> A driverless electric car driving on a city road with other vehicles during the daytime.
+The final detailed prompt is used to generate an AI-based autonomous drone-delivery video.
 
-### Prompt 2 – Refined
+The generated video should contain:
 
-> A modern driverless electric car smoothly driving along a multi-lane urban road during daylight, surrounded by normal traffic, with traffic lights, buildings, trees, and clear lane markings visible.
+* Autonomous delivery drone
+* Small package
+* Urban/residential environment
+* Roads and buildings
+* Trees and vehicles
+* Stable aerial movement
+* Package delivery
+* Natural daylight
+* Realistic camera perspective
 
-### Prompt 3 – Final
+---
 
-> A photorealistic automotive driving video showing a modern electric vehicle traveling autonomously on a multi-lane urban road during a bright sunny day. The vehicle moves smoothly and steadily without a visible driver, maintaining its lane while traveling through normal traffic. Several cars and pickup trucks move naturally in adjacent lanes at realistic speeds. The road contains clear lane markings, traffic signals, intersections, sidewalks, utility poles, roadside grass, trees, and commercial buildings. Show the vehicle approaching and passing through a normal urban intersection while maintaining a safe trajectory. Use a realistic forward-facing camera perspective from inside the vehicle, with the dashboard and windshield subtly visible. Natural daylight, realistic shadows, accurate vehicle proportions, physically correct road motion, stable camera movement, realistic reflections, documentary-style automotive footage, no dramatic effects, no collisions, no sudden movements, and no visible driver.
+# 4. Prompts Used
+
+## Prompt 1 – Basic
+
+> A delivery drone flying over a city and carrying a package during the daytime.
+
+## Prompt 2 – Refined
+
+> A modern autonomous delivery drone smoothly flying over a residential city area during daylight while carrying a small package, with buildings, roads, trees, and cars visible below.
+
+## Prompt 3 – Final
+
+> A photorealistic aerial video showing a modern autonomous delivery drone carrying a small cardboard package through a residential urban neighborhood during a bright sunny day. The drone flies smoothly and steadily at a safe altitude above the road while maintaining a stable flight path. Show houses, apartment buildings, roads, parked cars, moving vehicles, trees, sidewalks, street lights, utility poles, and pedestrians below. The drone approaches a residential building, slows down, carefully descends near the entrance, and delivers the package safely. Use a realistic aerial tracking camera perspective that follows the drone during flight. Natural daylight, realistic shadows, accurate drone proportions, realistic package size, physically believable flight movement, stable camera motion, detailed urban surroundings, natural reflections, documentary-style technology footage, no dramatic effects, no collisions, no sudden movements, and no distorted objects.
 
 ---
 
 # Result
 
-The selected autonomous-driving portion of the reference video was analyzed and reproduced using progressively refined text prompts. The final prompt generated a realistic autonomous-driving scene containing a driverless electric vehicle, surrounding traffic, road infrastructure, traffic signals, and natural daylight conditions.
+The selected autonomous drone-delivery scenario was analyzed and reproduced using progressively refined text prompts. The final prompt generated a realistic drone-delivery scene containing an autonomous drone, delivery package, urban environment, buildings, roads, vehicles, trees, and natural daylight conditions.
 
 ---
 
 # Conclusion
 
-The experiment demonstrated the use of **prompt engineering for text-to-video generation** by reproducing an autonomous-driving scenario from an existing reference video. Starting with a basic description and progressively adding details about the vehicle, road, traffic, camera perspective, lighting, movement, and environment improved the similarity of the generated video.
+The experiment demonstrated the use of **prompt engineering for text-to-video generation** by creating an autonomous drone-delivery scenario using progressively refined prompts. Starting with a basic description and progressively adding details about the drone, package, environment, camera perspective, lighting, movement, and delivery action improved the quality and realism of the generated video.
 
 The experiment also demonstrated that **specific descriptions of motion and scene composition are particularly important for video generation**, because the AI model must generate not only individual visual elements but also continuous movement between frames.
 
-Although exact reproduction of the original video is difficult, carefully structured prompts can generate visually similar autonomous-driving simulations. Such techniques can be useful for **ADAS education, automotive visualization, simulation, presentations, and future AI-based driving-system research**.
+Although exact reproduction of a reference video is difficult, carefully structured prompts can generate visually similar autonomous drone-delivery simulations. Such techniques can be useful for **drone education, delivery visualization, simulation, presentations, smart-city demonstrations, and future AI-based autonomous-system research**.
